@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th style="font-weight: bold">Input your Test scores</th>
+        <th style="font-weight: bold">Input your Midterm exam scores</th>
+        <th style="font-weight: bold">Input your Final exam scores</th>
+    </tr>
+    <tr>
+        <td><input class='score' style="width: 100%" type="number" id="testScore" onkeyup="inform();"></td>
+        <td><input class='score' style="width: 100%" type="number" id="midScore" onkeyup="inform();"></td>
+        <td><input class='score' style="width: 100%" type="number" id="finalScore" onkeyup="inform();"></td>
+        <td>
+            <button type="button" onclick="Check();">Check</button>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <p>Your are:<span id="result"></span></p>
+        </td>
+    </tr>
+    <script src="script.js"></script>
+</table>
+</body>
+</html>
